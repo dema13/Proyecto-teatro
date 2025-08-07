@@ -1,0 +1,175 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Página de inicio */
+.inicio .fondo-inicio {
+  background: url('img/telon.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 15%;
+}
+body.inicio {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.marco {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen decorativa de fondo (telón) */
+.imagen-marco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* Contenido centrado */
+.contenido-inicio {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.contenido-inicio h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.botones-inicio a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 12px 25px;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botones-inicio a:hover {
+  background-color: darkred;
+}
+
+/* Botones */
+.botones-inicio a {
+  display: block;
+  width: 200px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.botones-inicio a:hover {
+  background-color: #cc0000;
+}
+
+
+.inicio h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.botones-inicio a {
+  display: block;
+  width: 200px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.botones-inicio a:hover {
+  background-color: #cc0000;
+}
+
+/* Navegación común */
+header {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.icono {
+  width: 40px;
+  margin-right: 20px;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+nav a.activo,
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 30px;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
+}
+.galeria-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre imágenes */
+  margin: 40px auto;
+  flex-wrap: wrap; /* Permite que se acomoden en pantallas pequeñas */
+}
+
+.galeria-horizontal img {
+  width: 30%; /* Ocupa 30% del contenedor */
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
